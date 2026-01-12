@@ -1,0 +1,56 @@
+a = rock = """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
+
+b = """
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+"""
+
+c = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
+
+
+list1 = [a, b, c]
+abc = ['a', 'b', 'c']
+
+user_input = input()
+position = user_input[0].lower()
+index_identify = abc.index(position)
+count1 = len(list1)
+# print(count1)
+compter_response = random.randint(0, count1) - 1
+
+final_response = list1[compter_response]
+# final_response1 = abc.index(final_response)
+print(final_response)
+
+if index_identify >= 3 or index_identify < 0:
+    print("invalid")
+elif index_identify == 0 and compter_response == 2:
+    print("you win ")
+elif compter_response == 0 and index_identify == 2:
+    print("you fail")
+elif index_identify > compter_response:
+    print("you win")
+elif compter_response > index_identify:
+    print("you fail")
+elif compter_response == index_identify:
+    print("draw")
+else:
+    ""
