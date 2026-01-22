@@ -57,7 +57,7 @@ stages = ['''
 =========
 ''']
 
-b = ['Pavi', 'Rahul', 'Vishnu']
+b = ['Athira', 'Rahul', 'Vishnu']
 a = [items.lower() for items in b]
 
 choosen_word = random.choice(a)
