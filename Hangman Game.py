@@ -59,7 +59,6 @@ stages = ['''
 ''']
 
 
-
 end_of_game = False
 word_list = ["Athira", "Vishnu", "Rahul"]
 chosen_word = random.choice(word_list)
